@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1649295341474,
@@ -11,6 +11,14 @@
                 },
                 {
                     "date": 1649295357228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     \"*.{vue,js,ts}\": \"eslint --fix\"\n   },\n   \"config\": {\n     \"commitizen\": {\n-      \"path\": \"./node_modules/cz-conventional-changelog\"\n+      \"path\": \"./node_modules/cz-customizable\"\n     }\n   },\n   \"dependencies\": {\n     \"axios\": \"^0.21.1\",\n"
+                },
+                {
+                    "date": 1649297001076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     \"*.{vue,js,ts}\": \"eslint --fix\"\n   },\n   \"config\": {\n     \"commitizen\": {\n-      \"path\": \"./node_modules/cz-customizable\"\n+      \"path\": \"./node_modules/cz-conventional-changelog\"\n     }\n   },\n   \"dependencies\": {\n     \"axios\": \"^0.21.1\",\n@@ -53,9 +53,9 @@\n     \"@typescript-eslint/parser\": \"^4.21.0\",\n     \"@vitejs/plugin-vue\": \"^1.6.0\",\n     \"@vue/compiler-sfc\": \"^3.2.6\",\n     \"@vue/test-utils\": \"^2.0.0-rc.4\",\n-    \"commitizen\": \"^4.2.3\",\n+    \"commitizen\": \"^4.2.4\",\n     \"cz-conventional-changelog\": \"^3.3.0\",\n     \"cz-customizable\": \"^6.3.0\",\n     \"eslint\": \"^7.24.0\",\n     \"eslint-config-airbnb-base\": \"^14.2.1\",\n"
+                },
+                {
+                    "date": 1649297025598,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     \"*.{vue,js,ts}\": \"eslint --fix\"\n   },\n   \"config\": {\n     \"commitizen\": {\n-      \"path\": \"./node_modules/cz-conventional-changelog\"\n+      \"path\": \"./node_modules/cz-customizable\"\n     }\n   },\n   \"dependencies\": {\n     \"axios\": \"^0.21.1\",\n"
                 }
             ],
