@@ -16,6 +16,7 @@ export default defineComponent({
     const increment = () => {
       count.value += 1
     }
+
     return { count, increment }
   }
 })
@@ -23,8 +24,8 @@ export default defineComponent({
 
 <style scoped lang="stylus">
 button {
-  cursor pointer
-  font-size 20px
-  padding 5px
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
 }
 </style>

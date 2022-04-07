@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".cz-config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1649295619818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1649295619818,
+            "name": "Commit-0",
+            "content": "module.exports = {\n  // type 类型（定义之后，可通过上下键选择）\n  types: [\n    {\n      value: 'feat',\n      name: 'feat:     新增功能'\n    },\n    {\n      value: 'fix',\n      name: 'fix:      修复 bug'\n    },\n    {\n      value: 'docs',\n      name: 'docs:     文档变更'\n    },\n    {\n      value: 'style',\n      name: 'style:    代码格式（不影响功能，例如空格、分号等格式修正）'\n    },\n    {\n      value: 'refactor',\n      name: 'refactor:    代码重构（不包括 bug 修复、功能新增）'\n    },\n    {\n      value: 'perf',\n      name: 'perf:     性能优化'\n    },\n    {\n      value: 'test',\n      name: 'test:     添加、修改测试用例'\n    },\n    {\n      value: 'build',\n      name: 'build:    构建流程、外部依赖变更（如升级 npm 包、修改 webpack 配置等）'\n    },\n    {\n      value: 'ci',\n      name: 'ci:       修改 CI 配置、脚本'\n    },\n    {\n      value: 'chore',\n      name: 'chore:    对构建过程或辅助工具和库的更改（不影响源文件、测试用例）'\n    },\n    {\n      value: 'revert',\n      name: 'revert:   回滚 commit'\n    }\n  ],\n\n  // scope 类型（定义之后，可通过上下键选择）\n  scopes: [\n    ['components', '组件相关'],\n    ['hooks', 'hook 相关'],\n    ['utils', 'utils 相关'],\n    ['element-plus', '对 element-plus 的调整'],\n    ['styles', '样式相关'],\n    ['deps', '项目依赖'],\n    ['auth', '对 auth 修改'],\n    ['other', '其他修改'],\n    // 如果选择 custom，后面会让你再输入一个自定义的 scope。也可以不设置此项，把后面的 allowCustomScopes 设置为 true\n    ['custom', '以上都不是？我要自定义']\n  ].map(([value, description]) => {\n    return {\n      value,\n      name: `${value.padEnd(30)} (${description})`\n    }\n  }),\n\n  // 是否允许自定义填写 scope，在 scope 选择的时候，会有 empty 和 custom 可以选择。\n  // allowCustomScopes: true,\n\n  // allowTicketNumber: false,\n  // isTicketNumberRequired: false,\n  // ticketNumberPrefix: 'TICKET-',\n  // ticketNumberRegExp: '\\\\d{1,5}',\n\n  // 针对每一个 type 去定义对应的 scopes，例如 fix\n  /*\n  scopeOverrides: {\n    fix: [\n      { name: 'merge' },\n      { name: 'style' },\n      { name: 'e2eTest' },\n      { name: 'unitTest' }\n    ]\n  },\n  */\n\n  // 交互提示信息\n  messages: {\n    type: '确保本次提交遵循 Angular 规范！\\n选择你要提交的类型：',\n    scope: '\\n选择一个 scope（可选）：',\n    // 选择 scope: custom 时会出下面的提示\n    customScope: '请输入自定义的 scope：',\n    subject: '填写简短精炼的变更描述：\\n',\n    body: '填写更加详细的变更描述（可选）。使用 \"|\" 换行：\\n',\n    breaking: '列举非兼容性重大的变更（可选）：\\n',\n    footer: '列举出所有变更的 ISSUES CLOSED（可选）。 例如: #31, #34：\\n',\n    confirmCommit: '确认提交？'\n  },\n\n  // 设置只有 type 选择了 feat 或 fix，才询问 breaking message\n  allowBreakingChanges: ['feat', 'fix'],\n\n  // 跳过要询问的步骤\n  skipQuestions: ['body', 'footer'],\n\n  subjectLimit: 100, // subject 限制长度\n  breaklineChar: '|' // 换行符，支持 body 和 footer\n  // footerPrefix : 'ISSUES CLOSED:'\n  // askForBreakingChangeFirst : true,\n}\n"
+        }
+    ]
+}

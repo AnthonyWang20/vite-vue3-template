@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/views/Test.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1649240608184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1649240644936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,6 @@\n button {\n     cursor: pointer;\n     font-size: 20px;\n     padding: 5px;\n-    color: #ccc;\n }\n </style>\n"
+                },
+                {
+                    "date": 1649240699591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     const count = ref<number>(0)\n     const increment = () => {\n       count.value += 1\n     }\n+    const x = 'hello'\n     return { count, increment }\n   }\n })\n </script>\n"
+                },
+                {
+                    "date": 1649240721109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n     const increment = () => {\n       count.value += 1\n     }\n     const x = 'hello'\n+    console.log(x)\n+\n     return { count, increment }\n   }\n })\n </script>\n"
+                },
+                {
+                    "date": 1649295280774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,8 @@\n     const count = ref<number>(0)\n     const increment = () => {\n       count.value += 1\n     }\n-    const x = 'hello'\n-    console.log(x)\n \n     return { count, increment }\n   }\n })\n"
+                }
+            ],
+            "date": 1649240608184,
+            "name": "Commit-0",
+            "content": "<template>\n  <div class=\"test-container page-container\">\n    <div class=\"page-title\">Unit Test Page</div>\n    <p>count is: {{ count }}</p>\n    <button @click=\"increment\">increment</button>\n  </div>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent, ref } from 'vue'\n\nexport default defineComponent({\n  name: 'Vuex',\n  setup() {\n    const count = ref<number>(0)\n    const increment = () => {\n      count.value += 1\n    }\n    return { count, increment }\n  }\n})\n</script>\n\n<style scoped lang=\"stylus\">\nbutton {\n    cursor: pointer;\n    font-size: 20px;\n    padding: 5px;\n    color: #ccc;\n}\n</style>\n"
+        }
+    ]
+}
