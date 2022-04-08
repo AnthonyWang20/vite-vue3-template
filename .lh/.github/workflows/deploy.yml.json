@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".github/workflows/deploy.yml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1649320667219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1649320667219,
+            "name": "Commit-0",
+            "content": "name: deploy\n\non:\n  push:\n    branches: [master]\n\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n\n      - name: Setup Node.js v14.x\n        uses: actions/setup-node@v1\n        with:\n          node-version: '14.x'\n\n      - name: Install\n        run: npm install\n\n      - name: Build\n        run: npm run build\n\n      - name: Deploy\n        uses: peaceiris/actions-gh-pages@v3\n        with:\n          publish_dir: ./dist\n          github_token: ${{ secrets.VUE3_DEPLOY }}\n          user_name: ${{ secrets.MY_USER_NAME }}\n          user_email: ${{ secrets.MY_USER_EMAIL }}\n          commit_message: Update Vite2.x + Vue3.x + TypeScript Starter\n"
+        }
+    ]
+}

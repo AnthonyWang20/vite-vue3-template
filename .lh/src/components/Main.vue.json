@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Main.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1649381307196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1649381307196,
+            "name": "Commit-0",
+            "content": "<template>\n  <main class=\"main-container\">\n    <div class=\"top\">\n      <Header />\n    </div>\n\n    <div class=\"bottom\">\n      <div class=\"left\">\n        <Nav />\n      </div>\n      <!-- 注释 -->\n      <div class=\"right\">\n        <div class=\"content\">\n          <router-view />\n        </div>\n      </div>\n    </div>\n  </main>\n</template>\n\n<script lang=\"ts\">\nimport { defineComponent } from 'vue'\nimport Header from '@/components/Header.vue'\nimport Nav from '@/components/Nav.vue'\n\nexport default defineComponent({\n  name: 'Main',\n  components: {\n    Header,\n    Nav\n  }\n})\n</script>\n\n<style scoped lang=\"stylus\">\n@import '../style/basic.styl';\n\n$top-height = 60px;\n$left-side-width = 80px;\n\n.main-container {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    width: 100%;\n    height: 100%;\n    background: $second-background-color;\n    box-sizing: border-box;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n\n    .top {\n        position: relative;\n        box-sizing: border-box;\n        width: 100%;\n        height: $top-height;\n        margin-bottom: 10px;\n    }\n\n    .bottom {\n        position: relative;\n        box-sizing: border-box;\n        width: 100%;\n        height: 100%;\n        display: flex;\n        justify-content: space-between;\n\n        .left {\n            position: relative;\n            width: $left-side-width;\n            height: 100%;\n            box-sizing: border-box;\n        }\n\n        .right {\n            position: relative;\n            width: 100%;\n            height: 100%;\n            box-sizing: border-box;\n            padding: 0 10px 10px 10px;\n\n            .content {\n                position: relative;\n                width: 100%;\n                height: 100%;\n                background: $background-color;\n                border-radius: 5px;\n                box-sizing: border-box;\n                padding: 10px;\n            }\n        }\n    }\n}\n\n.page-links {\n    a {\n        font-weight: bold;\n        margin: 0 20px;\n    }\n}\n</style>\n"
+        }
+    ]
+}
